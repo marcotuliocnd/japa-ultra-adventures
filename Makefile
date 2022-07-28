@@ -1,5 +1,5 @@
 build:
-	javac -d ./bin ./src/Main.java
+	javac -d ./bin ./src/*.java -classpath ./bin
 
 run:
 	java -cp ./bin Main
@@ -7,4 +7,4 @@ run:
 clean:
 	rm -rf ./bin/*.class
 
-dev: build run
+dev: clean build run
