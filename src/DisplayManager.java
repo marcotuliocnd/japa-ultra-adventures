@@ -6,7 +6,7 @@ public class DisplayManager extends Canvas {
   public static int WIDTH = 1024;
   public static int HEIGHT = 768;
 
-  private JFrame jFrame = new JFrame("Super Ken");
+  private JFrame jFrame = new JFrame("Japa Ultra Adventures");
 
   public DisplayManager (GameManager gameManager) {
     this.setPreferredSize(new Dimension(WIDTH, HEIGHT));
