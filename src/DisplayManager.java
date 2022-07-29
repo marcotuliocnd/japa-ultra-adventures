@@ -5,6 +5,7 @@ import java.awt.Dimension;
 public class DisplayManager extends Canvas {
   public static int WIDTH = 1024;
   public static int HEIGHT = 768;
+  public static int MAX_FPS = 30;
 
   private JFrame jFrame = new JFrame("Japa Ultra Adventures");
 
@@ -19,9 +20,5 @@ public class DisplayManager extends Canvas {
     this.jFrame.setVisible(true);
     this.jFrame.setLocationRelativeTo(null);
     System.out.println("> DisplayManager started");
-  }
-
-  public void requestScreenFocus () {
-    this.requestFocus();
   }
 }
